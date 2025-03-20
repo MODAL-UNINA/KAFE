@@ -1,3 +1,9 @@
-# KAFE
+# KAFÈ: Kernel Aggregation for FEderated
 
-## A PyTorch Implementation of Federated Learning Method: KAFÈ
+## Abstract
+The convergence and generalization abilities of federated learning (FL) models encounter significant obstacles when confronted with non-independent and identically distributed (non-IID) data. This situation leads to wandering behaviors among individual clients, thereby causing the global model to deviate from local optimal states. Recent research has shed light on this phenomenon, indicating that it may be attributed to biases introduced by local updates from clients. Specifically, it has been found that the primary reason for the performance degradation of model trained on non-IID data is the classifier, 
+as biased local classifiers struggle to effectively classify unseen data due to shifted decision boundaries influenced by local class distributions. Motivated by the above insight, we present \underline{KAFÈ}, a novel yet simple aggregation solution designed to address non-IID-ness by introducing \underline{K}ernel \underline{A}ggregation for \underline{FE}derated Learning. KAFÈ leverages Kernel Density Estimation (KDE) to construct a novel classification layer for the global model, drawing upon the estimated weight distributions of the individual classifiers. We conducted several experiments on image and text datasets to evaluate KAFÈ's performance, consistently observing superior results compared to other state-of-the-art (SOTA) FL methods. Notably, KAFÈ achieves these results with reduced computational overhead compared to leading SOTA approaches.
+
+## Acknowledgments
+ - PNRR project FAIR -  Future AI Research (PE00000013), Spoke 3, under the NRRP MUR program funded by the NextGenerationEU.
+ - G.A.N.D.A.L.F. - Gan Approaches for Non-iiD Aiding Learning in Federations, CUP: E53D23008290006, PNRR - Missione 4 “Istruzione e Ricerca” - Componente C2 Investimento 1.1 “Fondo per il Programma Nazionale di Ricerca e Progetti di Rilevante Interesse Nazionale (PRIN)”.
