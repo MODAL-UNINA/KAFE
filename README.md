@@ -1,5 +1,5 @@
 # KAFÈ: Kernel Aggregation for FEderated
-- This is a PyTorch/GPU implementation of the paper about Federated learning (PKDD ECML 2024).
+- This is a PyTorch/GPU implementation of the paper about Federated learning (ECML PKDD 2024).
 
 ## Abstract
 The convergence and generalization abilities of federated learning (FL) models encounter significant obstacles when confronted with non-independent and identically distributed (non-IID) data. This situation leads to wandering behaviors among individual clients, thereby causing the global model to deviate from local optimal states. Recent research has shed light on this phenomenon, indicating that it may be attributed to biases introduced by local updates from clients. Specifically, it has been found that the primary reason for the performance degradation of model trained on non-IID data is the classifier, 
